@@ -1,0 +1,25 @@
+.preview {
+  flex: 1;
+  padding: 24px;
+  background: #f9fafb;
+}
+
+.badge {
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.pkg {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+.tag {
+  margin-right: 8px;
+  background: #111;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}

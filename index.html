@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logistics Order Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT PANEL -->
+  <div class="form-panel">
+    <h2>Shipment Details</h2>
+
+    <label>Order ID</label>
+    <input type="text" value="ORD-123456" readonly />
+
+    <label>Shipment Date</label>
+    <input type="date" />
+
+    <label>Delivery Type</label>
+    <select>
+      <option>Standard</option>
+      <option>Express</option>
+    </select>
+
+    <h3>Consignor</h3>
+    <input placeholder="Name" />
+    <input placeholder="Address" />
+    <input placeholder="City" />
+    <input placeholder="Pincode" />
+
+    <h3>Consignee</h3>
+    <input placeholder="Name" />
+    <input placeholder="Address" />
+    <input placeholder="City" />
+    <input placeholder="Pincode" />
+
+    <h3>Packages</h3>
+    <div class="package-box">
+      <input placeholder="Package Name" />
+      <input placeholder="Weight (kg)" />
+      <input placeholder="Length" />
+      <input placeholder="Width" />
+      <input placeholder="Height" />
+      <input placeholder="Value (₹)" />
+    </div>
+
+    <div class="checkbox">
+      <label><input type="checkbox" /> Fragile</label>
+      <label><input type="checkbox" /> Insurance</label>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="preview-panel">
+    <h2>📦 Shipment Preview</h2>
+
+    <div class="card">
+      <p><strong>Order ID:</strong> ORD-123456</p>
+      <p><strong>Date:</strong> --</p>
+      <p><strong>Delivery:</strong> Standard</p>
+
+      <hr />
+
+      <p><strong>Sender:</strong> Name</p>
+      <p><strong>Receiver:</strong> Name</p>
+
+      <hr />
+
+      <p><strong>Packages:</strong></p>
+      <ul>
+        <li>Box A - 2kg</li>
+      </ul>
+
+      <hr />
+
+      <p>Total Packages: 1</p>
+      <p>Total Weight: 2 kg</p>
+      <p>Total Value: ₹1000</p>
+
+      <div class="badges">
+        <span class="fragile">Fragile</span>
+        <span class="insured">Insured</span>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
